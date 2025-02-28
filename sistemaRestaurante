@@ -1,0 +1,21 @@
+public class SistemaRestaurante {
+    public static void main(String[] args) {
+        // Criação de alguns pratos
+        Prato prato1 = new Prato("Pizza Margherita", 30.00, "Pizza com molho de tomate, queijo e manjericão.");
+        Prato prato2 = new Prato("Lasanha", 45.00, "Lasanha de carne com molho bechamel.");
+        Prato prato3 = new Prato("Salada Caesar", 20.00, "Salada com alface, croutons e molho Caesar.");
+
+        // Criando um pedido
+        Pedido pedido1 = new Pedido(1, "João Silva");
+
+        // Adicionando pratos ao pedido
+        pedido1.adicionarPrato(prato1);
+        pedido1.adicionarPrato(prato2);
+
+        // Removendo um prato do pedido
+        pedido1.removerPrato(prato2);
+
+        // Visualizando o pedido
+        pedido1.visualizarPedido();
+    }
+}
